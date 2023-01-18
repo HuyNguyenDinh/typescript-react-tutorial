@@ -7,7 +7,7 @@ type InputProps = {
 
 export const Input = (props: InputProps) => {
     const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        console.log(event)
+        console.log(event.target.value)
     }
     return(
         <input type="text" value={props.value} onChange={handleInputChange} />
